@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* border:1px solid red; */
 }
 
 html,
@@ -17,9 +18,7 @@ body {
     width: 100%;
 }
 
-ul {
-    list-style: none;
-}
+
 
 h4 {
     font-size: 22px;
@@ -179,10 +178,10 @@ h6 {
 
 
 
+
 /* section4 */
 
-
-.section4 .info4 {
+section .info4 {
     width: 460px;
     padding-bottom: 19px;
     /* border: 1px solid red; */
@@ -195,25 +194,41 @@ h6 {
     /* border:1px solid red; */
 }
 
-.circle {
-    text-align: center;
-    background-color: #00e3aa;
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+ul li:before {
+    
+    content: '';
+    display: inline-block; 
     height: 29px;
     width: 29px;
+    background-size: 15px;
+    /* <a href="https://imgbb.com/"><img src="https://i.ibb.co/v4WHk1j/check-removebg-preview.png" alt="check-removebg-preview" border="0"></a> */
+    background-image: url("https://i.ibb.co/v4WHk1j/check-removebg-preview.png") ;
+    background-repeat: no-repeat;
+    background-color:#00e3aa;
     border-radius: 50%;
-
+    background-position: center center;
+    margin: 5px;
+    vertical-align: middle;
 }
 
-.feature {
+.featurename{
+    display:flex;
     font-size: 16px;
-    padding: 0 10px;
 }
 
-table {
-    table-layout: 100%;
+.featureright{
+    margin-left: 20px;
 }
 
 /* section4 */
+
+
+
 
 /* footer */
 
@@ -222,7 +237,7 @@ table {
     height: auto;
     padding: 40px 0 0 0;
     text-transform: uppercase;
-    /* border: 1px solid red; */
+
 }
 
 .footer-container {
@@ -301,7 +316,7 @@ table {
     align-items: center;
     padding: 22px 0 24px 130px;
     justify-content: flex-start;
-    background-color:#f8f9fa;
+    background-color: #f8f9fa;
 }
 
 .footer2 p {
