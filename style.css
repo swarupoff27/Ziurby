@@ -42,16 +42,19 @@ a {
 
 /* header */
 
-.navbar {
-    top: 0;
-    position: fixed;
+header {
     width: 100%;
-    height: auto;
-    padding: 40px 200px 40px 200px;
-    text-transform: uppercase;
-    font-weight: 600;
+    position: absolute;
     z-index: 1;
     /* border: 1px solid red; */
+}
+
+.navbar{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 40px 150px 40px 150px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .navbar-name a {
@@ -75,9 +78,8 @@ a {
 }
 
 .work a{
-     padding: 0 50px;
+     margin: 0 50px;
 }
-
 
 
 
@@ -87,8 +89,9 @@ a {
     /* border: 2px solid red; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) , url('images/image.png');
     background-color: black;
-    width: 100%;
-    /* height: 771px; */
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    object-fit: fill;
     height: 100vh;
     position: relative;
 }
@@ -137,13 +140,16 @@ button:hover {
 /* section white */
 
 .white {
-    margin: 100px 0px 100px 0px;
+    
+    max-width: 1440px;
+    margin: 100px auto 100px auto;
+    /* padding: 0 150px; */
     position: relative;
 }
 
 .div1 {
     /* border:1px solid red; */
-    margin: 0px 200px 0px 200px;
+    margin: 150px;
     overflow: auto;
     position: relative;
     
@@ -159,13 +165,11 @@ button:hover {
     float: left;  
 }
 
-
-
 /* div2 */
 
 .div2 {
     /* border:1px solid green; */
-    margin: 100px 200px 200px 200px;
+    margin: 150px;
     overflow:auto;
     position: relative;
 }
@@ -228,10 +232,9 @@ button:hover {
 
 .div3 {
     /* border:1px solid blue; */
-    margin: 100px 140px 200px 140px;
     overflow:auto;
     position:relative;
-   
+    margin: 150px;
 }
 
 .img3 {
@@ -287,26 +290,33 @@ button:hover {
 /* footer */
 
 .footer {
+    border: 1px solid #e7e8ea;
+    background-color: #fbfafc;
     margin-top: 200px;
     width: 100%;
     height: auto;
 }
 
 .footer-container {
-    background-color: #fbfafc;
-    border-top: 1px solid #e7e8ea;
-    border-bottom: 1px solid #e7e8ea;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.footer1 {
+    /* border: 1px solid red; */
     width: 100%;
     float: left;
     padding: 40px 0;
     position: relative;
+    clear: both;
 }
 
 
 
 .footer-name {
     /* border:1px solid red; */
-    padding-left: 100px;
+    padding-left: 150px;
     width: calc(100% / 3);
     float: left;
     position: absolute;
@@ -337,7 +347,8 @@ button:hover {
     /* border:1px solid red;  */
     width: calc(100% / 3);
     float: right;
-    margin-right:100px;
+    padding-right: 150px;
+   
 }
 
 
@@ -348,19 +359,30 @@ button:hover {
     height: 40px;
     padding: 12px;
     border: 1px solid #e7e8ea;
+    border-radius: 6px;
+    margin:0 1px;
+    
 }
 
 
 .footer2 {
+    /* border: 1px solid red; */
+    width: 100%;
+    border-top: 1px solid #e7e8ea;
     margin-top:10px;
     background-color: #f8f9fa;
+    clear: both;
+
 }
 
 .footer2 p {
+    /* border-top: 1px solid red; */
+    padding-left: 150px;
+    margin: 0 auto;
     width: 100%;
+    max-width: 1440px;
     color: #999ea8;
     font-size: 11px;
     font-weight: 400;
-    padding-left: 100px;
 
 }
